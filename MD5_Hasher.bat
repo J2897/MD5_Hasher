@@ -1,9 +1,10 @@
 :: Released under the GNU General Public License version 3 by J2897.
+
 @echo OFF
 pushd "%~dp0"
 cls
 
-REM Get the OS #-Bit of the OS...
+REM Get the OS #-Bit...
 set BIT=64
 if %PROCESSOR_ARCHITECTURE% == x86 (
 	if not defined PROCESSOR_ARCHITEW6432 (set BIT=32)
