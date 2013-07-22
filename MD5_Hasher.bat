@@ -12,9 +12,9 @@ if %PROCESSOR_ARCHITECTURE% == x86 (
 
 REM Set the appropriate md5deep executable...
 if %BIT% == 64 (
-	(set MD5DEEP_EXE="%CD%\md5deep\md5deep64.exe") 
+	set MD5DEEP_EXE="%CD%\md5deep\md5deep64.exe"
 ) else (
-	(set MD5DEEP_EXE="%CD%\md5deep\md5deep.exe")
+	set MD5DEEP_EXE="%CD%\md5deep\md5deep.exe"
 )
 
 set FILES_2_B_HASHED="%CD%\hashed"
