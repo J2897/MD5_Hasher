@@ -22,9 +22,7 @@ set HASH_DB="%CD%\hashes.dat"
 set TEMP_HASH_DB="%CD%\temp_hashes.dat"
 
 REM Create a FILES_2_B_HASHED folder if necessary...
-if not exist %FILES_2_B_HASHED% (
-	(md %FILES_2_B_HASHED%)
-)
+if not exist %FILES_2_B_HASHED% (md %FILES_2_B_HASHED%)
 
 echo Place the "files to be hashed" inside this folder...
 echo %FILES_2_B_HASHED%
